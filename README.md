@@ -45,7 +45,7 @@ The exporter must run on the same Windows machine as RTSS due to session-local s
 
 2. **Install dependencies:**
    ```bash
-  py -m pip install -r requirements.txt
+   py -m pip install -r requirements.txt
    ```
 
 3. **Test it works:**
