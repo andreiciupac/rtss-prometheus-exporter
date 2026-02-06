@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rtss-prometheus-exporter"
+version = "0.0.1"
+description = "Prometheus exporter for RTSS (RivaTuner Statistics Server) FPS and FrameTime metrics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = ["prometheus", "rtss", "rivatuner", "fps", "monitoring", "gaming", "exporter"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Monitoring",
+]
+dependencies = [
+    "prometheus_client>=0.20.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/rtss-prometheus-exporter"
+Issues = "https://github.com/yourusername/rtss-prometheus-exporter/issues"
+Repository = "https://github.com/yourusername/rtss-prometheus-exporter"
+
+[project.scripts]
+rtss-exporter = "rtss_exporter.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["rtss_exporter*"]
