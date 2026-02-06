@@ -39,7 +39,7 @@ The exporter must run on the same Windows machine as RTSS due to session-local s
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/rtss-prometheus-exporter.git
+   git clone https://github.com/andreiciupac/rtss-prometheus-exporter.git
    cd rtss-prometheus-exporter
    ```
 
